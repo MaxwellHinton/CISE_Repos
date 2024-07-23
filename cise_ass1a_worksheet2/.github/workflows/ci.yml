@@ -1,13 +1,11 @@
 name: CI_action
 
 on:
+  # push is triggered on merge.
   push:
     branches: [main]
   pull_request:
     branches: [main] 
-  #ci.yml action triggered by a main merge.
-  merge:
-    branches: [main]
 
 jobs:
   build:
