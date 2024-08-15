@@ -13,6 +13,9 @@ const NewDiscussion = () => {
   const submitNewArticle = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+
+    // this process is logging the JSON string to the console for example purposes.
+    // in a real application, this JSON string would be sent to backend for processing.
     console.log(
       JSON.stringify({
         title,
